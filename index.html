@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<div class="slider-box">
+    <div class="bg"></div>
+    <div class="your-class sider-1">
+        <div class="item">
+            <div class="item_br1"></div>
+            <div class="item_text">your content1</div>
+        </div>
+        <div class="item">
+            <div class="item_br1"></div>
+            <div class="item_text">your content2</div>
+        </div>
+        <div class="item">
+            <div class="item_br1"></div>
+            <div class="item_text">your content3</div>
+        </div>
+    </div>
+    <div class="your-class slider-2">
+        <div class="item">
+            <div class="item_br1"></div>
+            <div class="item_text">your content1</div>
+        </div>
+        <div class="item">
+            <div class="item_br1"></div>
+            <div class="item_text">your content2</div>
+        </div>
+        <div class="item">
+            <div class="item_br1"></div>
+            <div class="item_text">your content3</div>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <button class="prev">Назад</button>
+    <button class="next">Вперед</button>
+</div>
+
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.your-class').slick({
+            asNavFor: '.your-class',
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            swipe: false
+        });
+
+    });
+
+</script>
+</body>
+</html>
